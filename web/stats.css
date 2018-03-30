@@ -1,0 +1,56 @@
+h1 {
+  font: 18px sans-serif;
+  text-align: center;
+  font-weight: bold;
+}
+
+.paper {
+  box-shadow: 5px 10px;
+  padding: 10px;
+  margin: 10px;
+  border: thin solid black;
+  font: 14px sans-serif;
+  float: left;
+}
+
+.gem_list {
+ float: left;
+ overflow-y: scroll;
+ height: 300px;
+ font: 12px sans-serif;
+ font-color: grey;
+ margin: 10px;
+ padding: 10px;
+}
+
+.chart_frame h1 {
+  font: 12px sans-serif;
+  text-align: center;
+}
+.chart rect {
+  fill: steelblue;
+}
+
+.chart text {
+  fill: white;
+  font: 10px sans-serif;
+  text-anchor: end;
+}
+
+.axis text {
+  font: 10px sans-serif;
+  fill: grey;
+}
+
+.line {
+  fill: none;
+  stroke: steelblue;
+  stroke-width: 2px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
