@@ -3,12 +3,43 @@
 <meta charset="UTF-8">
 <head>
 <script src="https://d3js.org/d3.v4.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Oswald:400' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Oswald:300' rel='stylesheet' type='text/css'>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
 <link rel="stylesheet" href="stats.css">
 </head>
 <body>
 <div class="paper">
-  <h1>Ruby gems security update frequency</h1>
   <p>
+  <h1>Ruby gems security update frequency</h1>
+  </p>
+  <br/>
+  <p>
+  Ruby gems get updated, but how often? And why it matters? Knowing the frequency
+  of the updates can help us predict how much effort will mean to maintain a ruby
+  application which requires a given set of gems.</p>
+  <p>
+  In order to have a good prediction, we need to look at the history and how this
+  data looks like. 
+  </p>
+  <p>
+  In chart#1 we can see a plot where the <i>x-axis</i> is the year and the <i>y-axis</i> is the
+  number of <b>security</b> updates. We have chosen to look at the security ones
+  cause that is when you MUST update. To be fair, we are looking at the security issues, 
+  and we are assuming each security issue means an update.</p>
+  
+  <p>We deliberately choose ignoring other updates, as it is what you will usually do, unless they fix a bug which fixes an issue on your app.</p>
+  
+  <p>You can select and unselect a different set of gems. Use that
+  tool to help you decide which gems should you use on your project and have an idea
+  on the number of times you may have to update them.
+  </p>
+  <p class=footer>
+  Data for this project comes from the <a href="https://github.com/rubysec/ruby-advisory-db">ruby-advisory-db</a> project.
+  <br/>
+  Inspired on <a href="https://sourceforge.net/projects/updateforecast/">UFO, Updates Forecast for openSUSE</a>
+  <br/>
+  Last update: <script src="version.js"></script>
   </p>
   <div class="chart_frame">
     <h1>Chart 1: Ruby advisory database statistics</h1>
@@ -19,11 +50,9 @@
     <a href="javascript:select_all(false)">unselect all</a>
 
   </div>
-</div>
 
 <script src="stats.js"></script>
-
-
+</div>
 </body>
 </html>
 

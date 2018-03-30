@@ -1,16 +1,26 @@
 h1 {
-  font: 18px sans-serif;
+  font-family: Oswald, sans-serif;
+  font-size: 300%;
   text-align: center;
   font-weight: bold;
 }
 
+.footer {
+  font: 70% sans-serif;
+  color: grey;
+  text-align: center;
+}
+
 .paper {
   box-shadow: 5px 10px;
-  padding: 10px;
+  padding: 100px;
   margin: 10px;
   border: thin solid black;
-  font: 14px sans-serif;
+  font-size: 110%;
+  font-family: 'Open Sans Condensed', sans-serif;
   float: left;
+  color: black;
+  width: 1000px;
 }
 
 .gem_list {
@@ -18,9 +28,13 @@ h1 {
  overflow-y: scroll;
  height: 300px;
  font: 12px sans-serif;
- font-color: grey;
+ color: grey;
  margin: 10px;
  padding: 10px;
+}
+
+.chart_frame {
+  float: left;
 }
 
 .chart_frame h1 {
